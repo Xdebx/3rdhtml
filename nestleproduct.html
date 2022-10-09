@@ -1,0 +1,102 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* height: 1rem; */
+  
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .black-header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+<!-- <script>
+    function myFunction() {
+  alert("Successfully Purchased!");
+}
+</script> -->
+<script src="nestle.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<nav class="navbar">
+  <!-- <img class="image" src="images/shopback.png" alt="shoppic" /> -->
+  <a href="homepage.html">
+  <div class="shopeemall">Shopee Mall</div>
+  </a>
+
+  <div class="nav-links" id="navLinks">
+    <i class="fa fa-times"></i>
+    <ul>
+      <li><a href="#">Shopee Home</a></li>
+      <li><a href="#">Sell on Shopee</a></li>
+      <li><a href="#">Download</a></li>
+      <li><a href="#">Follow us on</a></li>
+    </ul>
+  </div>
+  <i class="fa fa-bars"></i>
+</nav><br>
+
+<div class="columns">
+    <ul class="price">
+      <li class="black-header">Nestle Brand</li>
+      <li class="grey">Product: Juice Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ratione? Reprehenderit laboriosam eveniet qui illo iure quaerat id maiores placeat, at voluptatum ad quas modi veritatis distinctio aliquam optio ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id autem optio dicta dolorum tempore ad necessitatibus ipsam velit dolore saepe. Similique, totam placeat quidem earum dicta consectetur maiores molestiae aliquid?</li>
+      <li>Price: <strong>5000</strong></li>
+      <li>Quantity:<strong>10</strong></li>
+      <li class="grey"><a href="homepage.html" onclick="myFunction()" class="button">Buy</a></li>
+    </ul>
+  </div>
